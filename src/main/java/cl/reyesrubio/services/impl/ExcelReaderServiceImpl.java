@@ -22,7 +22,6 @@ public class ExcelReaderServiceImpl implements IExcelReaderService{
 		try {
 			//traer la hoja de trabajo
 			Workbook workbook = new XSSFWorkbook(excelDataFile.getInputStream());
-			String lowerCaseFileName = excelDataFile.getOriginalFilename().toLowerCase();
 			HashMap<String, String> objeto = null;
 			//la hoja segun el indice indicado
 			Sheet sheet = workbook.getSheetAt(0);
